@@ -41,7 +41,7 @@ const items = [
     icon: Settings,
   },
   {
-    title: "Sign Out",
+    title: "Log Out",
     url: "",
     icon: LogOut,
   }
