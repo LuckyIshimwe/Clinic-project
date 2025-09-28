@@ -36,7 +36,7 @@ const items = [
     icon: History,
   },
   {
-    title: "Settings",
+    title: "My Settings",
     url: "#",
     icon: Settings,
   },
