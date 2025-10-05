@@ -1,8 +1,9 @@
-const express = require('express');
-const dotenv = require('dotenv');
-const connectDB = require('./config/db');
-const cors = require('cors');
-const patientRoutes = require('./routes/auth');
+import express from 'express';
+import dotenv from 'dotenv';
+import connectDB from './config/db.js';
+import cors from 'cors';
+import patientRoutes from './routes/auth.js';
+import authRoute from "./routes/auth.js"
 dotenv.config();
 connectDB();
 
@@ -10,7 +11,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/auth', patientRoutes);
+app.use('/register', patientRoutes);
+app.use("/auth",authRoute);
 
 
               
